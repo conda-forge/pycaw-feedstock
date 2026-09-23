@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "20251023"
+  version: "20260921"
 
 package:
   name: pycaw
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pycaw/pycaw-${{ version }}.tar.gz
-  sha256: 19935b92eb5efc3f3ea5ee8a2d37ca49009e9dc00f83d067b74b9922e84b5b3b
+  sha256: 48decedfbb5e0654d983b6b1876b4cef14dbfe62c943d7c8d8370fe343f95901
 
 build:
-  number: 1
+  number: 0
   skip: not win
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
